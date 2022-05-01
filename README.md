@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://cdn.jsdelivr.net/gh/RealLanta/lantawrt-cr6608/LantaWrt_Logo.png" alt="LantaWrt-CR6608" width="400">
+  <img src="https://cdn.jsdelivr.net/gh/RealLanta/lantawrt-k2p-a2/LantaWrt_Logo.png" alt="LantaWrt-CR6608" width="400">
   <br>LantaWrt-K2P(A2)<br>
 
 </h1>
