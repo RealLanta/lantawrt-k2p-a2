@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://cdn.jsdelivr.net/gh/RealLanta/lantawrt-k2p-a2/LantaWrt_Logo.png" alt="LantaWrt-CR6608" width="400">
+  <img src="https://cdn.jsdelivr.net/gh/RealLanta/lantawrt-k2p-a2/LantaWrt_Logo.png" alt="LantaWrt-K2P(A2)" width="400">
   <br>LantaWrt-K2P(A2)<br>
 
 </h1>
@@ -33,13 +33,11 @@
 
 ## 纯洁
 
-LantaWrt非常的纯洁，只保留了最基本的功能
-
-![](https://cdn.jsdelivr.net/gh/RealLanta/lantawrt-cr6608/doc/2022-04-30_13-30.png)
+LantaWrt-K2P(A2)非常的纯洁，提供了最基础的OpenWrt环境，没有额外的插件
 
 ## 轻量
 
-LantaWrt的资源占用非常低，默认情况下开启V2ray(WS+TLS)内存占用仅120M
+LantaWrt-K2P(A2)的资源占用非常低，默认情况下开启V2ray(WS+TLS)内存占用仅120M
 
 ![](https://cdn.jsdelivr.net/gh/RealLanta/lantawrt-cr6608/doc/2022-04-30_13-26.png)
 
