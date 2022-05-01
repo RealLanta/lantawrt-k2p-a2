@@ -49,17 +49,15 @@ LantaWrt-K2P(A2)的资源占用非常低，默认情况下开启V2ray(WS+TLS)内
 
 ## 更改
 
-- 增加了[Hello World](https://github.com/jerrykuku/luci-app-vssr)（默认开启SSR、SS、V2ray、VLESS、Trojan的支持）
-- 增加了Adbyby Plus+
-- 增加了网络唤醒
-- 增加了动态DNS
-- 增加了KMS服务器
-- 增加了htop（方便查看系统占用）
 - 默认开启iPv6Helper
 
 # 刷机方法
 
-在Breed刷入`openwrt-ramips-mt7621-phicomm_k2p-initramfs-kernel.bin`即可
+首先在Breed刷入`openwrt-ramips-mt7621-phicomm_k2p-initramfs-kernel.bin`
+
+进入系统后进入菜单`系统->备份/升级`
+
+在下面的`刷写新的固件`**去掉**“保留配置”的勾选，并选择`openwrt-ramips-mt7621-phicomm_k2p-squashfs-sysupgrade.bin`刷入
 
 # 自编译
 
