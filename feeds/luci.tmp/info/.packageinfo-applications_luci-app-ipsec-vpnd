@@ -1,0 +1,41 @@
+Source-Makefile: feeds/luci/applications/luci-app-ipsec-vpnd/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-ipsec-vpnd
+Submenu: 3. Applications
+Version: 1.0-11
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +strongswan +strongswan-minimal +strongswan-mod-xauth-generic +strongswan-mod-kernel-libipsec +kmod-tun
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI support for IPSec VPN Server (IKEv1 with PSK and Xauth)
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI support for IPSec VPN Server (IKEv1 with PSK and Xauth)
+
+@@
+
+Package: luci-i18n-ipsec-vpnd-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 1.0-11
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ipsec-vpnd
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-ipsec-vpnd - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-ipsec-vpnd - 简体中文 (Simplified Chinese)
+
+@@
+
+

@@ -1,0 +1,41 @@
+Source-Makefile: feeds/luci/applications/luci-app-zerotier/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-zerotier
+Submenu: 3. Applications
+Version: 1.0-20
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zerotier
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI for Zerotier
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI for Zerotier
+
+@@
+
+Package: luci-i18n-zerotier-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 1.0-20
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-zerotier
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-zerotier - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-zerotier - 简体中文 (Simplified Chinese)
+
+@@
+
+

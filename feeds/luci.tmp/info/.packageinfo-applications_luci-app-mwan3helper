@@ -1,0 +1,41 @@
+Source-Makefile: feeds/luci/applications/luci-app-mwan3helper/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-mwan3helper
+Submenu: 3. Applications
+Version: 1-3
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +luci-app-mwan3 +pdnsd-alt +dnsmasq-full +ipset
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI support for MWAN3 Helper
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI support for MWAN3 Helper
+
+@@
+
+Package: luci-i18n-mwan3helper-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 1-3
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-mwan3helper
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-mwan3helper - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-mwan3helper - 简体中文 (Simplified Chinese)
+
+@@
+
+

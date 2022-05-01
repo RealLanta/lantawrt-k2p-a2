@@ -1,0 +1,60 @@
+Source-Makefile: feeds/luci/applications/luci-app-ipsec-server/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-ipsec-server
+Submenu: 3. Applications
+Version: 20211223-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-tun +luci-lib-jsonc +strongswan +strongswan-minimal +strongswan-mod-kernel-libipsec +strongswan-mod-openssl +strongswan-mod-xauth-generic +xl2tpd
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI support for IPSec VPN Server
+Maintainer: Lienol <lawlienol@gmail.com>
+Source: 
+Type: ipkg
+Description: LuCI support for IPSec VPN Server
+Lienol <lawlienol@gmail.com>
+@@
+
+Package: luci-i18n-ipsec-server-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 20211223-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ipsec-server
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-ipsec-server - zh-cn translation
+Maintainer: Lienol <lawlienol@gmail.com>
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-ipsec-server - 简体中文 (Simplified Chinese)
+Lienol <lawlienol@gmail.com>
+@@
+
+Package: luci-i18n-ipsec-server-zh_Hans
+Default: LUCI_LANG_zh_Hans||(ALL&&m)
+Version: 20211223-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ipsec-server
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-ipsec-server - zh_Hans translation
+Maintainer: Lienol <lawlienol@gmail.com>
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-ipsec-server - 
+Lienol <lawlienol@gmail.com>
+@@
+
+

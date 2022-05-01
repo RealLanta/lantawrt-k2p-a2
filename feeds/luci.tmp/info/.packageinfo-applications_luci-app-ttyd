@@ -1,0 +1,41 @@
+Source-Makefile: feeds/luci/applications/luci-app-ttyd/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-ttyd
+Submenu: 3. Applications
+Version: 1.0-3
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ttyd
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI support for ttyd
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI support for ttyd
+
+@@
+
+Package: luci-i18n-ttyd-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 1.0-3
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ttyd
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-ttyd - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-ttyd - 简体中文 (Simplified Chinese)
+
+@@
+
+

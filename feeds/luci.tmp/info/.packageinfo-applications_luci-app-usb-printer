@@ -1,0 +1,41 @@
+Source-Makefile: feeds/luci/applications/luci-app-usb-printer/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-usb-printer
+Submenu: 3. Applications
+Version: 1.0-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +p910nd +kmod-usb-printer
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: USB Printer Share via TCP/IP
+Maintainer: 
+Source: 
+Type: ipkg
+Description: USB Printer Share via TCP/IP
+
+@@
+
+Package: luci-i18n-usb-printer-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 1.0-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-usb-printer
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-usb-printer - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-usb-printer - 简体中文 (Simplified Chinese)
+
+@@
+
+

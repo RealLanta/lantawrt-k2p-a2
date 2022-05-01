@@ -1,0 +1,41 @@
+Source-Makefile: feeds/luci/applications/luci-app-cpufreq/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-cpufreq
+Submenu: 3. Applications
+Version: 1-7
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI for CPU Freq Setting
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI for CPU Freq Setting
+
+@@
+
+Package: luci-i18n-cpufreq-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 1-7
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-cpufreq
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-cpufreq - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-cpufreq - 简体中文 (Simplified Chinese)
+
+@@
+
+

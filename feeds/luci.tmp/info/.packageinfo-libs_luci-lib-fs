@@ -1,0 +1,22 @@
+Source-Makefile: feeds/luci/libs/luci-lib-fs/Makefile
+
+Package: luci-lib-fs
+Submenu: Lua
+Version: 1.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +luci-lib-nixio
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: luci-lib-fs
+Maintainer: 
+Source: 
+Type: ipkg
+Description:   luci-lib-fs
+https://github.com/lbthomsen/openwrt-luci
+
+@@
+
+

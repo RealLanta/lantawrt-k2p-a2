@@ -1,0 +1,79 @@
+Source-Makefile: feeds/luci/protocols/luci-proto-bonding/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-proto-bonding
+Submenu: 5. Protocols
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +proto-bonding
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: Support for Link Aggregation (Channel Bonding)
+Maintainer: Helge Mader <ma@dev.tdt.de>
+Source: 
+Type: ipkg
+Description: Support for Link Aggregation (Channel Bonding)
+Helge Mader <ma@dev.tdt.de>
+@@
+
+Package: luci-i18n-bonding-de
+Default: LUCI_LANG_de||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-proto-bonding
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-proto-bonding - de translation
+Maintainer: Helge Mader <ma@dev.tdt.de>
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-proto-bonding - Deutsch (German)
+Helge Mader <ma@dev.tdt.de>
+@@
+
+Package: luci-i18n-bonding-en
+Default: LUCI_LANG_en||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-proto-bonding
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-proto-bonding - en translation
+Maintainer: Helge Mader <ma@dev.tdt.de>
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-proto-bonding - English
+Helge Mader <ma@dev.tdt.de>
+@@
+
+Package: luci-i18n-bonding-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-proto-bonding
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-proto-bonding - zh-cn translation
+Maintainer: Helge Mader <ma@dev.tdt.de>
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-proto-bonding - 简体中文 (Simplified Chinese)
+Helge Mader <ma@dev.tdt.de>
+@@
+
+

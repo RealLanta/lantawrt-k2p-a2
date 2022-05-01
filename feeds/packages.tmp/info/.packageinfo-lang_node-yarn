@@ -1,0 +1,27 @@
+Source-Makefile: feeds/packages/lang/node-yarn/Makefile
+Build-Depends: node/host
+Build-Depends/host: node/host
+Build-Types: host
+
+Package: node-yarn
+Submenu: Node.js
+Version: 1.22.17-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Fast, reliable, and secure dependency management
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>, Patrik Laszlo <alabard@gmail.com>
+Source: yarn-1.22.17.tgz
+License: BSD-2-Clause
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  Fast, reliable, and secure dependency management
+https://yarnpkg.com/
+Hirokazu MORIKAWA <morikw2@gmail.com>, Patrik Laszlo <alabard@gmail.com>
+@@
+
+

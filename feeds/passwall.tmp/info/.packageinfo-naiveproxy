@@ -1,0 +1,27 @@
+Source-Makefile: feeds/passwall/naiveproxy/Makefile
+Build-Depends: python3/host
+
+Package: naiveproxy
+Submenu: Web Servers/Proxies
+Version: 100.0.4896.60-1-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!(arc||(arm&&TARGET_gemini)||armeb||mips||mips64||powerpc) +libatomic
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Make a fortune quietly
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: naiveproxy-100.0.4896.60-1.tar.gz
+License: BSD 3-Clause
+LicenseFiles: LICENSE
+Type: ipkg
+Description:   NaïveProxy uses Chrome's network stack to camouflage traffic with strong
+  censorship resistance and low detectability. Reusing Chrome's stack also
+  ensures best practices in performance and security.
+https://github.com/klzgrad/naiveproxy
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+

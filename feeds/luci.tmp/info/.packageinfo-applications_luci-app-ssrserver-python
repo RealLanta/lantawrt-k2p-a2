@@ -1,0 +1,41 @@
+Source-Makefile: feeds/luci/applications/luci-app-ssrserver-python/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-ssrserver-python
+Submenu: 3. Applications
+Version: 3.2.0-7
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI for SSR Server Python
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI for SSR Server Python
+
+@@
+
+Package: luci-i18n-ssrserver-python-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 3.2.0-7
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ssrserver-python
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-ssrserver-python - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-ssrserver-python - 简体中文 (Simplified Chinese)
+
+@@
+
+

@@ -1,0 +1,22 @@
+Source-Makefile: feeds/luci/applications/luci-app-familycloud/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-familycloud
+Submenu: 3. Applications
+Version: 1-6
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +coreutils +coreutils-nohup +libreadline +libcurl +libopenssl +bash +curl +wget +openssl-util +ca-certificates +ca-bundle
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI support for FamilyCloudSpeeder
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI support for FamilyCloudSpeeder
+
+@@
+
+

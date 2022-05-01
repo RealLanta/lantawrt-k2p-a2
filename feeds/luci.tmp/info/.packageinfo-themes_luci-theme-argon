@@ -1,0 +1,22 @@
+Source-Makefile: feeds/luci/themes/luci-theme-argon/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-theme-argon
+Submenu: 4. Themes
+Version: 1.0-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: Argon Theme
+Maintainer: 
+Source: 
+Type: ipkg
+Description: Argon Theme
+
+@@
+
+

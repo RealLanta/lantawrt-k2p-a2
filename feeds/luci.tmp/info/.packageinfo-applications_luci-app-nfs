@@ -1,0 +1,41 @@
+Source-Makefile: feeds/luci/applications/luci-app-nfs/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-nfs
+Submenu: 3. Applications
+Version: 1.1-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +nfs-utils +nfs-kernel-server +nfs-kernel-server-utils +mount-utils
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI support for nfs
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI support for nfs
+
+@@
+
+Package: luci-i18n-nfs-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 1.1-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-nfs
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-nfs - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-nfs - 简体中文 (Simplified Chinese)
+
+@@
+
+

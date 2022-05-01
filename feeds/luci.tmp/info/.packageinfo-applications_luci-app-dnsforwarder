@@ -1,0 +1,43 @@
+Source-Makefile: feeds/luci/applications/luci-app-dnsforwarder/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-dnsforwarder
+Submenu: 3. Applications
+Version: 3.0.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +dnsforwarder
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI for Dnsforwarder
+Maintainer: Dennis <openwrt@tossp.com>
+Source: 
+License: GPL-3.0
+Type: ipkg
+Description: LuCI for Dnsforwarder
+Dennis <openwrt@tossp.com>
+@@
+
+Package: luci-i18n-dnsforwarder-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 3.0.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-dnsforwarder
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-dnsforwarder - zh-cn translation
+Maintainer: Dennis <openwrt@tossp.com>
+Source: 
+License: GPL-3.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-dnsforwarder - 简体中文 (Simplified Chinese)
+Dennis <openwrt@tossp.com>
+@@
+
+

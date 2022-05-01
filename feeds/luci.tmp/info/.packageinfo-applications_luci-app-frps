@@ -1,0 +1,45 @@
+Source-Makefile: feeds/luci/applications/luci-app-frps/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-frps
+Submenu: 3. Applications
+Version: 0.0.2-4
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +wget +frps
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI support for Frps
+Maintainer: lwz322 <lwz322@qq.com>
+Source: 
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description: LuCI support for Frps
+lwz322 <lwz322@qq.com>
+@@
+
+Package: luci-i18n-frps-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 0.0.2-4
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-frps
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-frps - zh-cn translation
+Maintainer: lwz322 <lwz322@qq.com>
+Source: 
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-frps - 简体中文 (Simplified Chinese)
+lwz322 <lwz322@qq.com>
+@@
+
+

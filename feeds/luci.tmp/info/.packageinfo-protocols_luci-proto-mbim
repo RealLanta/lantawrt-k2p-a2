@@ -1,0 +1,22 @@
+Source-Makefile: feeds/luci/protocols/luci-proto-mbim/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-proto-mbim
+Submenu: 5. Protocols
+Version: x-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +umbim
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI support for MBIM
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI support for MBIM
+
+@@
+
+

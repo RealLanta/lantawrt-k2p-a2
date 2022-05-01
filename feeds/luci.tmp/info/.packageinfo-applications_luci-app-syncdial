@@ -1,0 +1,22 @@
+Source-Makefile: feeds/luci/applications/luci-app-syncdial/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-syncdial
+Submenu: 3. Applications
+Version: 2.0-25
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-macvlan +luci-app-mwan3
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: Virtual WAN config generator
+Maintainer: 
+Source: 
+Type: ipkg
+Description: Virtual WAN config generator
+
+@@
+
+

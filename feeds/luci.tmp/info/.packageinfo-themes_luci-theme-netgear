@@ -1,0 +1,22 @@
+Source-Makefile: feeds/luci/themes/luci-theme-netgear/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-theme-netgear
+Submenu: 4. Themes
+Version: x-3
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: Netgear Theme
+Maintainer: 
+Source: 
+Type: ipkg
+Description: Netgear Theme
+
+@@
+
+

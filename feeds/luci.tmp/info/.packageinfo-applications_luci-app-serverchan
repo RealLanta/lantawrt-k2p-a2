@@ -1,0 +1,22 @@
+Source-Makefile: feeds/luci/applications/luci-app-serverchan/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-serverchan
+Submenu: 3. Applications
+Version: 2.01.4-9
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +iputils-arping +curl +jq
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI support for serverchan
+Maintainer: tty228 <tty228@yeah.net>
+Source: 
+Type: ipkg
+Description: LuCI support for serverchan
+tty228 <tty228@yeah.net>
+@@
+
+

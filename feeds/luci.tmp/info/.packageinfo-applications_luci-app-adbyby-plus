@@ -1,0 +1,41 @@
+Source-Makefile: feeds/luci/applications/luci-app-adbyby-plus/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-adbyby-plus
+Submenu: 3. Applications
+Version: 2.0-75
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +adbyby +uclient-fetch +ipset +dnsmasq-full
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI support for Adbyby
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI support for Adbyby
+
+@@
+
+Package: luci-i18n-adbyby-plus-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 2.0-75
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-adbyby-plus
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-adbyby-plus - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-adbyby-plus - 简体中文 (Simplified Chinese)
+
+@@
+
+

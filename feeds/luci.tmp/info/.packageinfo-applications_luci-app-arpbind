@@ -1,0 +1,41 @@
+Source-Makefile: feeds/luci/applications/luci-app-arpbind/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-arpbind
+Submenu: 3. Applications
+Version: 1-3
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ip
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: ARP Binding
+Maintainer: 
+Source: 
+Type: ipkg
+Description: ARP Binding
+
+@@
+
+Package: luci-i18n-arpbind-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 1-3
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-arpbind
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-arpbind - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-arpbind - 简体中文 (Simplified Chinese)
+
+@@
+
+

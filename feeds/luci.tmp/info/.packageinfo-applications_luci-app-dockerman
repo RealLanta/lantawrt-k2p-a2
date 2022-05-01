@@ -1,0 +1,43 @@
+Source-Makefile: feeds/luci/applications/luci-app-dockerman/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-dockerman
+Submenu: 3. Applications
+Version: v0.5.25-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +luci-lib-docker +luci-lib-ip +docker +dockerd +ttyd
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: Docker Manager interface for LuCI
+Maintainer: lisaac <lisaac.cn@gmail.com>
+Source: 
+License: AGPL-3.0
+Type: ipkg
+Description: Docker Manager interface for LuCI
+lisaac <lisaac.cn@gmail.com>
+@@
+
+Package: luci-i18n-dockerman-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: v0.5.25-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-dockerman
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-dockerman - zh-cn translation
+Maintainer: lisaac <lisaac.cn@gmail.com>
+Source: 
+License: AGPL-3.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-dockerman - 简体中文 (Simplified Chinese)
+lisaac <lisaac.cn@gmail.com>
+@@
+
+

@@ -1,0 +1,41 @@
+Source-Makefile: feeds/luci/applications/luci-app-kodexplorer/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-kodexplorer
+Submenu: 3. Applications
+Version: 20220109-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +nginx-ssl +unzip +zoneinfo-asia +php8 +php8-fastcgi +php8-fpm +php8-mod-curl +php8-mod-dom +php8-mod-gd +php8-mod-iconv +php8-mod-mbstring +php8-mod-opcache +php8-mod-session +php8-mod-zip +php8-mod-sqlite3 +php8-mod-pdo +php8-mod-pdo-sqlite +php8-mod-pdo-mysql +php8-mod-xml +php8-mod-xmlreader +php8-mod-xmlwriter
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI support for KodExplorer
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI support for KodExplorer
+
+@@
+
+Package: luci-i18n-kodexplorer-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 20220109-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-kodexplorer
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-kodexplorer - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-kodexplorer - 简体中文 (Simplified Chinese)
+
+@@
+
+

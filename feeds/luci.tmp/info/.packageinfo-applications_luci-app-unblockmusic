@@ -1,0 +1,53 @@
+Source-Makefile: feeds/luci/applications/luci-app-unblockmusic/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-unblockmusic
+Submenu: 3. Applications
+Version: 2.3.5-21
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +dnsmasq-full +ipset +uclient-fetch +PACKAGE_luci-app-unblockmusic_INCLUDE_UnblockNeteaseMusic_Go:UnblockNeteaseMusic-Go +PACKAGE_luci-app-unblockmusic_INCLUDE_UnblockNeteaseMusic_NodeJS:UnblockNeteaseMusic
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI support for Unblock NeteaseCloudMusic
+Maintainer: lean
+Source: 
+License: Apache-2.0
+Type: ipkg
+Description: LuCI support for Unblock NeteaseCloudMusic
+lean
+@@
+Config:
+config PACKAGE_luci-app-unblockmusic_INCLUDE_UnblockNeteaseMusic_Go
+	bool "UnblockNeteaseMusic Golang Version"
+	default y if i386||x86_64||arm||aarch64
+
+config PACKAGE_luci-app-unblockmusic_INCLUDE_UnblockNeteaseMusic_NodeJS
+	bool "UnblockNeteaseMusic NodeJS Version"
+	depends on HAS_FPU || KERNEL_MIPS_FPU_EMULATOR || SOFT_FLOAT
+	default n
+@@
+
+Package: luci-i18n-unblockmusic-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 2.3.5-21
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-unblockmusic
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-unblockmusic - zh-cn translation
+Maintainer: lean
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-unblockmusic - 简体中文 (Simplified Chinese)
+lean
+@@
+
+

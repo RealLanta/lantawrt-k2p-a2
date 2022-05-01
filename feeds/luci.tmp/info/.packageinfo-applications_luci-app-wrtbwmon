@@ -1,0 +1,41 @@
+Source-Makefile: feeds/luci/applications/luci-app-wrtbwmon/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-wrtbwmon
+Submenu: 3. Applications
+Version: 1.0-7
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +luci-app-nlbwmon
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI support for Wrtbwmon
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI support for Wrtbwmon
+
+@@
+
+Package: luci-i18n-wrtbwmon-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 1.0-7
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-wrtbwmon
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-wrtbwmon - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-wrtbwmon - 简体中文 (Simplified Chinese)
+
+@@
+
+

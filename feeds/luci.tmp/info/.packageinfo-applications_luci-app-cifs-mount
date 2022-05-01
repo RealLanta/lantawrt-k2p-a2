@@ -1,0 +1,41 @@
+Source-Makefile: feeds/luci/applications/luci-app-cifs-mount/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-cifs-mount
+Submenu: 3. Applications
+Version: 1-7
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-fs-cifs +kmod-nls-utf8
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI for SMB/CIFS Mount
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI for SMB/CIFS Mount
+
+@@
+
+Package: luci-i18n-cifs-mount-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 1-7
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-cifs-mount
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-cifs-mount - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-cifs-mount - 简体中文 (Simplified Chinese)
+
+@@
+
+

@@ -1,0 +1,41 @@
+Source-Makefile: feeds/luci/applications/luci-app-haproxy-tcp/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-haproxy-tcp
+Submenu: 3. Applications
+Version: 1.4-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +haproxy
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci for haproxy and shadowsocks
+Maintainer: Alex Zhuo <1886090@gmail.com>
+Source: 
+Type: ipkg
+Description: luci for haproxy and shadowsocks
+Alex Zhuo <1886090@gmail.com>
+@@
+
+Package: luci-i18n-haproxy-tcp-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 1.4-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-haproxy-tcp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-haproxy-tcp - zh-cn translation
+Maintainer: Alex Zhuo <1886090@gmail.com>
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-haproxy-tcp - 简体中文 (Simplified Chinese)
+Alex Zhuo <1886090@gmail.com>
+@@
+
+

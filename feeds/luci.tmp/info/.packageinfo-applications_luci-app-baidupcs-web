@@ -1,0 +1,22 @@
+Source-Makefile: feeds/luci/applications/luci-app-baidupcs-web/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-baidupcs-web
+Submenu: 3. Applications
+Version: 1.0-5
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +baidupcs-web +wget +openssl-util
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI support for BaiduPCS-Go
+Maintainer: <https://github.com/KFERMercer/luci-app-baidupcs-web>
+Source: 
+Type: ipkg
+Description: LuCI support for BaiduPCS-Go
+<https://github.com/KFERMercer/luci-app-baidupcs-web>
+@@
+
+

@@ -1,0 +1,41 @@
+Source-Makefile: feeds/luci/applications/luci-app-docker/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-docker
+Submenu: 3. Applications
+Version: 1-12
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +dockerd +docker +e2fsprogs +fdisk
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: Luci for Docker-CE
+Maintainer: 
+Source: 
+Type: ipkg
+Description: Luci for Docker-CE
+
+@@
+
+Package: luci-i18n-docker-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 1-12
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-docker
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-docker - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-docker - 简体中文 (Simplified Chinese)
+
+@@
+
+
