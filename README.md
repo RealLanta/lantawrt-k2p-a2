@@ -88,6 +88,6 @@ LantaWrt的源编译文件是开放的，你可以Clone仓库直接开始编译
 
 ![](https://cdn.jsdelivr.net/gh/RealLanta/lantawrt-k2p-a2/doc/bootloader.png)
 
-并点击“刷机”即可升级Breed版本
+并刷入后即可升级Breed版本
 
 升级好Breed之后重新刷入固件一般来说就能正常使用了
