@@ -33,31 +33,42 @@
 
 ## 纯洁
 
-LantaWrt-K2P(A2)非常的纯洁，提供了最基础的OpenWrt环境，没有额外的插件
+LantaWrt-K2P(A2)非常的纯洁，提供了最基础的OpenWrt环境，没有乱七八糟的插件占用机器资源
 
 ## 轻量
 
-LantaWrt-K2P(A2)的资源占用非常低，默认情况下开启V2ray(WS+TLS)内存占用仅120M
+LantaWrt-K2P(A2)的资源占用非常低，默认情况下待机内存占用仅70M
 
-![](https://cdn.jsdelivr.net/gh/RealLanta/lantawrt-cr6608/doc/2022-04-30_13-26.png)
+![](https://cdn.jsdelivr.net/gh/RealLanta/lantawrt-k2p-a2/doc/2022-05-02_03-12.png)
 
 ## 美观
 
 默认使用[Argon](https://github.com/jerrykuku/luci-theme-argon)主题，高雅而美观
 
-![](https://cdn.jsdelivr.net/gh/RealLanta/lantawrt-cr6608/doc/2022-04-30_13-27.png)
+![](https://cdn.jsdelivr.net/gh/RealLanta/lantawrt-k2p-a2/doc/2022-05-02_03-10.png)
+
+![](https://cdn.jsdelivr.net/gh/RealLanta/lantawrt-k2p-a2/doc/2022-05-02_03-11.png)
 
 ## 更改
 
 - 默认开启iPv6Helper
+- 默认使用Argon作为主题
 
 # 刷机方法
 
 首先在Breed刷入`openwrt-ramips-mt7621-phicomm_k2p-initramfs-kernel.bin`
 
+![](https://cdn.jsdelivr.net/gh/RealLanta/lantawrt-k2p-a2/doc/firmware.png)
+
 进入系统后进入菜单`系统->备份/升级`
 
+![](https://cdn.jsdelivr.net/gh/RealLanta/lantawrt-k2p-a2/doc/2022-05-02_03-15.png)
+
 在下面的`刷写新的固件`**去掉**“保留配置”的勾选，并选择`openwrt-ramips-mt7621-phicomm_k2p-squashfs-sysupgrade.bin`刷入
+
+![](https://cdn.jsdelivr.net/gh/RealLanta/lantawrt-k2p-a2/doc/2022-05-02_03-16.png)
+
+![](https://cdn.jsdelivr.net/gh/RealLanta/lantawrt-k2p-a2/doc/2022-05-02_03-17.png)
 
 # 自编译
 
@@ -65,3 +76,18 @@ LantaWrt的源编译文件是开放的，你可以Clone仓库直接开始编译
 
 [查看编译文档](https://github.com/RealLanta/lantawrt-cr6608/blob/master/compile.md)
 
+# 疑难解答
+
+## 为什么我刷入后无法保存数据重启后就没有了？
+
+这个是因为`openwrt-ramips-mt7621-phicomm_k2p-squashfs-sysupgrade.bin`没有刷入成功，通常升级一下Breed版本就可以了
+
+前往[Breed下载站](https://breed.hackpascal.net/)寻找K2P
+
+然后在你原本的Breed中把新版Breed拖到"Bootloader"选项
+
+![](https://cdn.jsdelivr.net/gh/RealLanta/lantawrt-k2p-a2/doc/bootloader.png)
+
+并点击“刷机”即可升级Breed版本
+
+升级好Breed之后重新刷入固件一般来说就能正常使用了
