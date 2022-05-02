@@ -8,11 +8,11 @@
     <a target="_blank" href="https://github.com/coolsnowwolf/lede">
     <img src="https://img.shields.io/badge/OpenWrt(LEDE) Kernel-r4491--d5622e353-blue">
   </a>
-  <a target="_blank" href="https://github.com/RealLanta/lantawrt-k2p-a2/tree/0.1">
-    <img src="https://img.shields.io/badge/source code-v0.1--beta-green.svg">
+  <a target="_blank" href="https://github.com/RealLanta/lantawrt-k2p-a2/tree/0.2">
+    <img src="https://img.shields.io/badge/source code-v0.2--beta-green.svg">
   </a>
   <a target="_blank" href="https://github.com/RealLanta/lantawrt-k2p-a2/releases">
-    <img src="https://img.shields.io/badge/New Release-v0.1--beta-orange.svg">
+    <img src="https://img.shields.io/badge/New Release-v0.2--beta-orange.svg">
   </a>
   </p>
 
@@ -33,13 +33,17 @@
 
 ## 纯洁
 
-LantaWrt-K2P(A2)非常的纯洁，提供了最基础的OpenWrt环境，极限压缩了EROM占用，给用户留了足够的空间安装额外插件
+LantaWrt-K2P(A2)非常的纯洁，提供了最基础的OpenWrt环境，极限压缩了EROM占用，给用户节省了空间安装额外插件
+
+![](https://cdn.jsdelivr.net/gh/RealLanta/lantawrt-k2p-a2/doc/2022-05-02_11-36.png)
+
+![](https://cdn.jsdelivr.net/gh/RealLanta/lantawrt-k2p-a2/doc/2022-05-02_11-37.png)
 
 ## 轻量
 
 LantaWrt-K2P(A2)的资源占用非常低，默认情况下待机内存占用仅70M
 
-![](https://cdn.jsdelivr.net/gh/RealLanta/lantawrt-k2p-a2/doc/2022-05-02_03-12.png)
+![](https://cdn.jsdelivr.net/gh/RealLanta/lantawrt-k2p-a2/doc/2022-05-02_11-35.png)
 
 ## 美观
 
