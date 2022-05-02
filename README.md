@@ -41,9 +41,9 @@ LantaWrt-K2P(A2)非常的纯洁，提供了最基础的OpenWrt环境，极限压
 
 ## 轻量
 
-LantaWrt-K2P(A2)的资源占用非常低，默认情况下待机内存占用仅70M
+LantaWrt-K2P(A2)的资源占用非常低，默认情况下开启ShellClash内存占用仅50M
 
-![](https://cdn.jsdelivr.net/gh/RealLanta/lantawrt-k2p-a2/doc/2022-05-02_11-35.png)
+![](https://cdn.jsdelivr.net/gh/RealLanta/lantawrt-k2p-a2/doc/2022-05-02_11-56.png)
 
 ## 美观
 
@@ -74,11 +74,9 @@ LantaWrt-K2P(A2)的资源占用非常低，默认情况下待机内存占用仅7
 
 ![](https://cdn.jsdelivr.net/gh/RealLanta/lantawrt-k2p-a2/doc/2022-05-02_03-17.png)
 
-# 自编译
+# 安装ShellClash以实现魔法上网
 
-LantaWrt的源编译文件是开放的，你可以Clone仓库直接开始编译
-
-[查看编译文档](https://github.com/RealLanta/lantawrt-cr6608/blob/master/compile.md)
+YouTube:https://youtu.be/domn8jtWm5Y
 
 # 疑难解答
 
@@ -95,3 +93,9 @@ LantaWrt的源编译文件是开放的，你可以Clone仓库直接开始编译
 并刷入后即可升级Breed版本
 
 升级好Breed之后重新刷入固件一般来说就能正常使用了
+
+# 自编译
+
+LantaWrt的源编译文件是开放的，你可以Clone仓库直接开始编译
+
+[查看编译文档](https://github.com/RealLanta/lantawrt-k2p-a2/blob/master/compile.md)
