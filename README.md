@@ -33,7 +33,7 @@
 
 ## 纯洁
 
-LantaWrt-K2P(A2)非常的纯洁，提供了最基础的OpenWrt环境，没有乱七八糟的插件占用机器资源
+LantaWrt-K2P(A2)非常的纯洁，提供了最基础的OpenWrt环境，极限压缩了EROM占用，给用户留了足够的空间安装额外插件
 
 ## 轻量
 
@@ -78,7 +78,7 @@ LantaWrt的源编译文件是开放的，你可以Clone仓库直接开始编译
 
 # 疑难解答
 
-## 为什么我刷入后无法保存数据重启后就没有了？
+## 为什么我保存数据重启后就没有了？
 
 这个是因为`openwrt-ramips-mt7621-phicomm_k2p-squashfs-sysupgrade.bin`没有刷入成功，通常升级一下Breed版本就可以了
 
