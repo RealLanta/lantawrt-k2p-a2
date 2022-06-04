@@ -53,49 +53,8 @@ LantaWrt-K2P(A2)的资源占用非常低，默认情况下开启ShellClash内存
 
 ![](https://cdn.jsdelivr.net/gh/RealLanta/lantawrt-k2p-a2/doc/2022-05-02_03-11.png)
 
-## 更改
+# Wiki文档
 
-- 默认开启iPv6Helper
-- 默认使用Argon作为主题
+目前使用方法、疑难解答都已经搬到了Wiki中！
 
-# 刷机方法
-
-首先在Breed刷入`openwrt-ramips-mt7621-phicomm_k2p-initramfs-kernel.bin`
-
-![](https://cdn.jsdelivr.net/gh/RealLanta/lantawrt-k2p-a2/doc/firmware.png)
-
-进入系统后进入菜单`系统->备份/升级`
-
-![](https://cdn.jsdelivr.net/gh/RealLanta/lantawrt-k2p-a2/doc/2022-05-02_03-15.png)
-
-在下面的`刷写新的固件`**去掉**“保留配置”的勾选，并选择`openwrt-ramips-mt7621-phicomm_k2p-squashfs-sysupgrade.bin`刷入
-
-![](https://cdn.jsdelivr.net/gh/RealLanta/lantawrt-k2p-a2/doc/2022-05-02_03-16.png)
-
-![](https://cdn.jsdelivr.net/gh/RealLanta/lantawrt-k2p-a2/doc/2022-05-02_03-17.png)
-
-# 安装ShellClash以实现魔法上网
-
-YouTube:https://youtu.be/domn8jtWm5Y
-
-# 疑难解答
-
-## 为什么我保存数据重启后就没有了？
-
-这个是因为`openwrt-ramips-mt7621-phicomm_k2p-squashfs-sysupgrade.bin`没有刷入成功，通常升级一下Breed版本就可以了
-
-前往[Breed下载站](https://breed.hackpascal.net/)寻找K2P
-
-然后在你原本的Breed中把新版Breed拖到"Bootloader"选项
-
-![](https://cdn.jsdelivr.net/gh/RealLanta/lantawrt-k2p-a2/doc/bootloader.png)
-
-并刷入后即可升级Breed版本
-
-升级好Breed之后重新刷入固件一般来说就能正常使用了
-
-# 自编译
-
-LantaWrt的源编译文件是开放的，你可以Clone仓库直接开始编译
-
-[查看编译文档](https://github.com/RealLanta/lantawrt-k2p-a2/blob/master/compile.md)
+https://github.com/RealLanta/lantawrt-k2p-a2/wiki
