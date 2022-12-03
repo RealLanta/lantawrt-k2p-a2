@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://cdn.jsdelivr.net/gh/RealLanta/lantawrt-k2p-a2/LantaWrt_Logo.png" alt="LantaWrt-K2P(A2)" width="400">
+  <img src="https://camo.githubusercontent.com/37725d02fa762dcef8a7946380e94d2238cb229f3dda482f9f3ce486e678826f/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f5265616c4c616e74612f6c616e74617772742d6372363630382f4c616e74615772745f4c6f676f2e706e67" alt="LantaWrt-K2P(A2)" width="400">
   <br>LantaWrt-K2P(A2)<br>
 
 </h1>
